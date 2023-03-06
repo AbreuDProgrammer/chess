@@ -7,16 +7,16 @@ export default function table({ started }) {
   const cols = ['A','B','C','D','E','F','G','H']
   const rows = [8, 7, 6, 5, 4, 3, 2, 1]
 
-  const squares = rows.map(row => {
-    return cols.map(col => {
+  const squares = rows.map((row) => {
+    return cols.map((col) => {
       let square = col+row
       let color = getColor(col, row)
       let piece = Pieces.map(piece => {
         if(piece.initialPosition == square)
-          return piece.piece
+          return <div key={square}>{piece.piece}</div>
         return
       })
-      return <Square key={square} square={square} color={color} started={started} piece={piece}></Square>
+      return <Square key={square} color={color} started={started} piece={piece} onClick={squareClicked}></Square>
     })
   })
 
@@ -55,4 +55,9 @@ function getColor(col, row)
 function isEven(number)
 {
   return number % 2 == 0
+}
+
+function squareClicked()
+{
+  alert('clicked');
 }
