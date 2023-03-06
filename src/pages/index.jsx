@@ -29,7 +29,7 @@ export default function Home() {
 
       <ButtonsRow/>
       
-      <Table/>
+      <Table started={started}/>
 
       <FontAwesomeIcon icon={faChessQueen}/>
 

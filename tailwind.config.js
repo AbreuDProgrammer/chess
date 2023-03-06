@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        'table': '45rem',
+        'table': '48rem',
         'encapsulation': '3rem',
       },
       gridRow: {

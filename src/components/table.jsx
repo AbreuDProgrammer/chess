@@ -1,17 +1,22 @@
+import Pieces from '../../lib/local/pieces'
+import Square from '@/components/square'
 import Table from '@/styles/table.module.css'
-import Text from '@/styles/text.module.css'
 
-export default function table() {
+export default function table({ started }) {
 
   const cols = ['A','B','C','D','E','F','G','H']
   const rows = [8, 7, 6, 5, 4, 3, 2, 1]
 
-  const squares = rows.map((row, index) => {
+  const squares = rows.map(row => {
     return cols.map(col => {
       let square = col+row
       let color = getColor(col, row)
-      let reverseColor = color == Table.white ? Text.black : Text.white
-      return <div key={square} id={square} className={'flex items-center justify-center '+color+' '+reverseColor}></div>
+      let piece = Pieces.map(piece => {
+        if(piece.initialPosition == square)
+          return piece.piece
+        return
+      })
+      return <Square key={square} square={square} color={color} started={started} piece={piece}></Square>
     })
   })
 
@@ -29,7 +34,7 @@ export default function table() {
         {rowsText}
       </div>
       <div>
-        <div className="w-table h-table grid grid-cols-8 grid-rows-8 border-4 border-black">
+        <div className="w-table h-table grid grid-cols-8 grid-rows-8">
           {squares}
         </div>
         <div className='w-table h-encapsulation grid grid-cols-8 grid-rows-1'>
