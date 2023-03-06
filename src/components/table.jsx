@@ -1,23 +1,24 @@
+import Table from '@/styles/table.module.css'
 import Pieces from '../../lib/local/pieces'
 import Square from '@/components/square'
-import Table from '@/styles/table.module.css'
+import Piece from '@/components/piece'
 
 export default function table({ started }) {
 
   const cols = ['A','B','C','D','E','F','G','H']
   const rows = [8, 7, 6, 5, 4, 3, 2, 1]
 
+  let pieces = Pieces.map(piece => {
+    return <Piece key={piece.name} name={piece.name} initialPosition={piece.initialPosition} piece={piece.piece} color={piece.color} >{piece.piece}</Piece>
+  })
+
+  console.log(pieces);
+
   const squares = rows.map((row) => {
     return cols.map((col) => {
       let square = col+row
       let color = getColor(col, row)
-      let piece = Pieces.map(piece => {
-        if(piece.initialPosition == square)
-          return <div key={square}>{piece.piece}</div>
-        return null
-      })
-      piece = piece.filter(entry => entry != null)[0] ?? null
-      return <Square key={square} square={square} color={color} started={started} piece={piece} onClick={squareClicked}></Square>
+      return <Square key={square} square={square} color={color} started={started} onClick={squareClicked}></Square>
     })
   })
 

@@ -3,194 +3,194 @@ import { faChessQueen, faChessPawn, faChessRook, faChessBishop, faChessKnight, f
 
 const pieces = [
   {
-    name: 'Pawn',
+    name: 'A2-Pawn',
     initialPosition: 'A2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'C2-Pawn',
     initialPosition: 'C2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'E2-Pawn',
     initialPosition: 'E2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'G2-Pawn',
     initialPosition: 'G2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'B2-Pawn',
     initialPosition: 'B2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'D2-Pawn',
     initialPosition: 'D2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'F2-Pawn',
     initialPosition: 'F2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Pawn',
+    name: 'H2-Pawn',
     initialPosition: 'H2',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Rook',
+    name: 'A1-Rook',
     initialPosition: 'A1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessRook} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Rook',
+    name: 'H1-Rook',
     initialPosition: 'H1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessRook} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Bishop',
+    name: 'C1-Bishop',
     initialPosition: 'C1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessBishop} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Bishop',
+    name: 'F1-Bishop',
     initialPosition: 'F1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessBishop} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Knight',
+    name: 'B1-Knight',
     initialPosition: 'B1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKnight} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Knight',
+    name: 'G1-Knight',
     initialPosition: 'G1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKnight} color='rgb(148 163 184)'/>
   },
   {
-    name: 'King',
+    name: 'E1-King',
     initialPosition: 'E1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKing} color='rgb(148 163 184)'/>
   },
   {
-    name: 'Queen',
+    name: 'D1-Queen',
     initialPosition: 'D1',
     color: 'white',
     piece: <FontAwesomeIcon  size="4x" icon={faChessQueen} color='rgb(148 163 184)'/>
   },
 
   {
-    name: 'Pawn',
+    name: 'A7-Pawn',
     initialPosition: 'A7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'C7-Pawn',
     initialPosition: 'C7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'E7-Pawn',
     initialPosition: 'E7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'G7-Pawn',
     initialPosition: 'G7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'B7-Pawn',
     initialPosition: 'B7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'D7-Pawn',
     initialPosition: 'D7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'F7-Pawn',
     initialPosition: 'F7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Pawn',
+    name: 'H7-Pawn',
     initialPosition: 'H7',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessPawn} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Rook',
+    name: 'A8-Rook',
     initialPosition: 'A8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessRook} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Rook',
+    name: 'H8-Rook',
     initialPosition: 'H8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessRook} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Bishop',
+    name: 'C8-Bishop',
     initialPosition: 'C8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessBishop} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Bishop',
+    name: 'F8-Bishop',
     initialPosition: 'F8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessBishop} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Knight',
+    name: 'B8-Knight',
     initialPosition: 'B8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKnight} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Knight',
+    name: 'G8-Knight',
     initialPosition: 'G8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKnight} color='rgb(51 65 85)'/>
   },
   {
-    name: 'King',
+    name: 'E8-King',
     initialPosition: 'E8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessKing} color='rgb(51 65 85)'/>
   },
   {
-    name: 'Queen',
+    name: 'D8-Queen',
     initialPosition: 'D8',
     color: 'black',
     piece: <FontAwesomeIcon  size="4x" icon={faChessQueen} color='rgb(51 65 85)'/>
