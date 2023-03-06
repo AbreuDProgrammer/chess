@@ -14,9 +14,10 @@ export default function table({ started }) {
       let piece = Pieces.map(piece => {
         if(piece.initialPosition == square)
           return <div key={square}>{piece.piece}</div>
-        return
+        return null
       })
-      return <Square key={square} color={color} started={started} piece={piece} onClick={squareClicked}></Square>
+      piece = piece.filter(entry => entry != null)[0] ?? null
+      return <Square key={square} square={square} color={color} started={started} piece={piece} onClick={squareClicked}></Square>
     })
   })
 
@@ -57,7 +58,7 @@ function isEven(number)
   return number % 2 == 0
 }
 
-function squareClicked()
+function squareClicked(square, hasPiece, piece)
 {
-  alert('clicked');
+  console.log(square, hasPiece)
 }
