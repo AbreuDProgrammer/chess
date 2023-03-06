@@ -11,7 +11,7 @@ export default function table() {
       let square = col+row
       let color = getColor(col, row)
       let reverseColor = color == Table.white ? Text.black : Text.white
-      return <div key={square} id={square} className={'flex items-center justify-center '+color+' '+reverseColor}>{square}</div>
+      return <div key={square} id={square} className={'flex items-center justify-center '+color+' '+reverseColor}></div>
     })
   })
 
